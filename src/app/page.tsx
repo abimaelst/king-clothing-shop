@@ -1,43 +1,37 @@
-import Image from 'next/image';
+import { DirectoryComponent } from '@/components/Directory/DirectoryComponent';
 
 export default function Home() {
+  const categories = [
+    {
+      id: 1,
+      title: 'hats',
+      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+    },
+    {
+      id: 2,
+      title: 'jackets',
+      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+    },
+    {
+      id: 3,
+      title: 'sneakers',
+      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+    },
+    {
+      id: 4,
+      title: 'womens',
+      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+    },
+    {
+      id: 5,
+      title: 'mens',
+      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+    },
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        {/*<img src="" alt=""/>*/}
-        <div>
-          <h2>Hats</h2>
-          <p>Show Now</p>
-        </div>
-      </div>
-      <div>
-        {/*<img src="" alt=""/>*/}
-        <div>
-          <h2>Jackets</h2>
-          <p>Show Now</p>
-        </div>
-      </div>
-      <div>
-        {/*<img src="" alt=""/>*/}
-        <div>
-          <h2>Sneakers</h2>
-          <p>Show Now</p>
-        </div>
-      </div>
-      <div>
-        {/*<img src="" alt=""/>*/}
-        <div>
-          <h2>Women&apos;s</h2>
-          <p>Show Now</p>
-        </div>
-      </div>
-      <div>
-        {/*<img src="" alt=""/>*/}
-        <div>
-          <h2>Mens</h2>
-          <p>Show Now</p>
-        </div>
-      </div>
+    <main>
+      <DirectoryComponent categories={categories} />
     </main>
   );
 }
