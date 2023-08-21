@@ -20,6 +20,9 @@ export const NavBarComponent = () => {
           <Link className="uppercase py-2.5 px-3.5" href="/shop">
             Shop
           </Link>
+          <Link className="uppercase py-2.5 px-3.5" href="/sign-in">
+            Sign In
+          </Link>
         </nav>
       </div>
     </>
